@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pendaftaran Mahasiswa Baru</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Formulir Pendaftaran Mahasiswa Baru</h2>
+    <form id="formPendaftaran">
+      
+      <!-- Data Pribadi -->
+      <h3>Data Pribadi</h3>
+      <label>Nama Lengkap</label>
+      <input type="text" name="nama" placeholder="Masukkan nama lengkap" required>
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Masukkan email aktif" required>
+
+      <label>No. HP</label>
+      <input type="text" name="nohp" placeholder="08xxxxxxxx" required>
+
+      <label>Tempat, Tanggal Lahir</label>
+      <input type="text" name="ttl" placeholder="contoh: Denpasar, 01-01-2005" required>
+
+      <label>Jenis Kelamin</label>
+      <select name="jk" required>
+        <option value="">-- Pilih --</option>
+        <option value="L">Laki-laki</option>
+        <option value="P">Perempuan</option>
+      </select>
+
+      <!-- Data Pendidikan -->
+      <h3>Data Pendidikan</h3>
+      <label>Asal Sekolah</label>
+      <input type="text" name="sekolah" placeholder="SMA/SMK asal" required>
+
+      <label>Tahun Lulus</label>
+      <input type="number" name="tahun" min="2000" max="2099" required>
+
+      <!-- Pilihan Prodi -->
+      <h3>Pilihan Program Studi</h3>
+      <label>Pilihan Prodi 1</label>
+      <select name="prodi1" required>
+        <option value="">-- Pilih Prodi --</option>
+        <option>Sistem Informasi</option>
+        <option>Teknik Informatika</option>
+        <option>Manajemen</option>
+        <option>Akuntansi</option>
+      </select>
+
+      <label>Pilihan Prodi 2</label>
+      <select name="prodi2">
+        <option value="">-- Pilih Prodi --</option>
+        <option>Sistem Informasi</option>
+        <option>Teknik Informatika</option>
+        <option>Manajemen</option>
+        <option>Akuntansi</option>
+      </select>
+
+      <!-- Upload -->
+      <h3>Upload Dokumen</h3>
+      <label>Upload Ijazah (PDF/JPG)</label>
+      <input type="file" name="ijazah" accept=".pdf,.jpg,.png">
+
+      <!-- Tombol -->
+      <button type="submit">Daftar</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
